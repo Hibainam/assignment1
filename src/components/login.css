@@ -1,0 +1,182 @@
+/* Background Video */
+video.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(70%); /* Slight dark overlay for better contrast */
+}
+/* Sign-Up Container */
+.sign-up-container {
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    padding: 2rem;
+    background-color: rgba(8, 7, 7, 0.614);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.heading {
+    text-align: center;
+    color:white;
+}
+
+.sign-up-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Form Fields */
+.input-field {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    outline: none;
+    transition: background 0.3s ease, border 0.3s ease;
+}
+
+.input-field:focus {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: #3a5bc1;
+}
+
+/* Captcha Form */
+.captcha_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: #ccc
+}
+
+.captcha_refresh {
+    padding: 0.6rem;
+    /* background-color: #c8cbd0; */
+    color: rgb(12, 12, 12);
+    border-radius: 40%;
+    cursor: pointer;
+    font-size: 1%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-left: 4px;
+}
+
+.captcha_refresh:hover {
+    /* background-color: #296b8b; */
+    transform: rotate(360deg);
+}
+
+.captcha_refresh i {
+    font-size: 1rem;
+}
+
+/* Login Button */
+.login-button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: white;
+    background: linear-gradient(45deg, #020305, #3a5bc1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+.login
+{
+    color:white;
+    text-decoration: none;
+}
+.input-container {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  
+  .icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #444;
+    font-size: 1.2rem;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 1rem;
+    padding-left: 30px; /* Adds space for the icon */
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+.login-button:hover {
+    background: linear-gradient(45deg, #5978b6, #0e0f0f);
+    transform: translateY(-3px);
+}
+
+.login-button span {
+    position: relative;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .sign-up-container {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .input-field,
+    .captcha_form input {
+        font-size: 0.9rem;
+    }
+
+    .captcha_form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .captcha_refresh {
+        margin-top: 10px;
+        align-self: center;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .input-field,
+    .captcha_form input {
+        font-size: 0.8rem;
+    }
+
+    .login-button span {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+}
+.account{
+    color: #ebe7e7;
+  }
+  
+  .link
+  {
+    color:rgb(224, 220, 220);
+    text-decoration: none;
+  }
